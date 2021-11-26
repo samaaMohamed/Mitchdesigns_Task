@@ -1,0 +1,36 @@
+.product-review {
+  text-align: center;
+  margin-top: 50px;
+  height: 982px;
+  width: 100%;
+  background-color: #ab9058;
+  .header {
+    text-align: center;
+    span {
+      color: #63001e;
+      font-family: "Hiragino Mincho ProN";
+      font-size: 140px;
+    }
+    p {
+      margin-top: -88px;
+      color: #ffffff;
+      font-family: Ubuntu;
+      font-size: 12px;
+    }
+    h5 {
+      color: #000104;
+      font-family: Ubuntu;
+      font-size: 30px;
+      font-weight: 500;
+      margin-bottom: 32px;
+    }
+  }
+  .mask {
+    height: 695px;
+    width: 634px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0 rgba(105, 87, 50, 0.2);
+    margin: auto;
+  }
+}
