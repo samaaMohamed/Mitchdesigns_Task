@@ -1,3 +1,7 @@
-
+@media (max-width: 991px) {
+  footer .menue .item {
+    margin: 0;
+  }
+}
 
 /*# sourceMappingURL=media.css.map */

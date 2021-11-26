@@ -26,12 +26,13 @@
     }
   }
   .mask {
-    width: 70%;
+    width: 100%;
     border-radius: 2px;
     background-color: #ffffff;
     box-shadow: 0 0 10px 0 rgba(105, 87, 50, 0.2);
     margin: auto;
     padding-bottom: 20px;
+    max-width: 750px;
     h5 {
       color: #121212;
       font-family: Helvetica;
@@ -96,7 +97,7 @@
     }
     .line {
       height: 1px;
-      width: 530px;
+      width: 100%;
       background-color: #efeadc;
       margin: auto;
       margin-top: 15px;

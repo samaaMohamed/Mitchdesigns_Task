@@ -15,6 +15,7 @@
       width: 100%;
     }
   }
+
   .right-header {
     h2 {
       color: #414241;
@@ -137,6 +138,24 @@
       .item5 {
         h5 {
           position: relative;
+          display: flex;
+          justify-content: space-between;
+          a {
+            width: 100%;
+          }
+
+          span {
+            font-size: 15px;
+            color: #000;
+          }
+          a.collapsed + span {
+            font-size: 0;
+            &:after {
+              content: "+";
+              font-size: 15px;
+            }
+          }
+
           i {
             position: absolute;
             top: 50%;
@@ -200,7 +219,7 @@
             span {
               color: #ab9058;
             }
-            i {
+            input {
               height: 13px;
               width: 13px;
               background-color: #000;
@@ -209,6 +228,7 @@
               text-align: center;
               line-height: 13px;
               margin-right: 5px;
+              border: 1px solid #000;
             }
           }
         }

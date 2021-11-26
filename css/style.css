@@ -1,19 +1,19 @@
 /*fonts
 ====================*/
-@font-face {
-  font-family: "Din-Medium";
-  src: url("../vendor/fonts/din-next-lt-w23-medium.ttf");
-  font-weight: normal;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
+*,
+*:after,
+*:before,
+*:focus,
+*:hover {
+  box-shadow: unset !important;
+  outline: 0 !important;
 }
-@font-face {
-  font-family: "Din-Regular";
-  src: url("../vendor/fonts/din-next-lt-w23-regular.ttf");
-  font-weight: bold;
-}
+
 /*body
 ===========================*/
 body {
-  font-family: "Din-Regular";
+  font-family: "Ubuntu", sans-serif;
   font-size: 14px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -23,7 +23,9 @@ body {
 
 /* Links
 ==========================*/
-a, a:hover, a:focus {
+a,
+a:hover,
+a:focus {
   text-decoration: none;
   color: inherit;
 }
@@ -35,7 +37,12 @@ button:focus {
 
 /* Headings
 ========================== */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   display: block;
   margin: 0;
   font-family: "Din-Medium";
@@ -265,6 +272,22 @@ ul {
 }
 .header .right-header .avilable-color .item5 h5 {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.header .right-header .avilable-color .item5 h5 a {
+  width: 100%;
+}
+.header .right-header .avilable-color .item5 h5 span {
+  font-size: 15px;
+  color: #000;
+}
+.header .right-header .avilable-color .item5 h5 a.collapsed + span {
+  font-size: 0;
+}
+.header .right-header .avilable-color .item5 h5 a.collapsed + span:after {
+  content: "+";
+  font-size: 15px;
 }
 .header .right-header .avilable-color .item5 h5 i {
   position: absolute;
@@ -318,7 +341,7 @@ ul {
 .header .right-header .avilable-color .item6 ul li span {
   color: #ab9058;
 }
-.header .right-header .avilable-color .item6 ul li i {
+.header .right-header .avilable-color .item6 ul li input {
   height: 13px;
   width: 13px;
   background-color: #000;
@@ -327,6 +350,7 @@ ul {
   text-align: center;
   line-height: 13px;
   margin-right: 5px;
+  border: 1px solid #000;
 }
 
 .more-tubs {
@@ -365,12 +389,13 @@ ul {
   margin-bottom: 32px;
 }
 .product-review .mask {
-  width: 70%;
+  width: 100%;
   border-radius: 2px;
   background-color: #ffffff;
   box-shadow: 0 0 10px 0 rgba(105, 87, 50, 0.2);
   margin: auto;
   padding-bottom: 20px;
+  max-width: 750px;
 }
 .product-review .mask h5 {
   color: #121212;
@@ -433,7 +458,7 @@ ul {
 }
 .product-review .mask .line {
   height: 1px;
-  width: 530px;
+  width: 100%;
   background-color: #efeadc;
   margin: auto;
   margin-top: 15px;
