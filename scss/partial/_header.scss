@@ -1,4 +1,14 @@
 .header {
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: ">" !important;
+    color: #000 !important;
+    font-size: 15px !important;
+  }
+  .active {
+    color: #af9751 !important;
+    font-family: Helvetica;
+    font-size: 13px;
+  }
   .video {
     margin-top: 25px;
     video {
@@ -174,7 +184,7 @@
         .content {
           display: flex;
           .images {
-            margin-right: 30px;
+            margin-right: 9px;
           }
           button {
             height: 31px;
